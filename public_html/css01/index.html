@@ -4,30 +4,33 @@
 
 <head>
 <meta charset="utf-8">
- <link rel="stylesheet" type="text/css" href="css_test.css">
-<title>Shoe Reviewer</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<style>
-#summary {
-  padding: 20px;
-}
-table{
- text-align: center; 
-  padding: 10px;
-
-}
-th {
-  padding: 10px;
  
-}
-th, td {
-border-left: 2px solid #ddd; 
-}
- </style> 
-}
-}
-}
-}
+<title>Shoe Reviewer</title>
+<!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.min.css">
+
+  <style>
+      .mycolor {
+        background-color: #EEEEEE;
+        border-style: solid;
+        border-width: 1px;
+      }
+      .container {
+        background-color: #FFFFEE;
+        border-style: solid;
+        border-width: 15px;
+
+      }
+    </style>
+
 </head>
 
 <body>
@@ -39,36 +42,61 @@ border-left: 2px solid #ddd;
     
       The Shoe Reviewer
     </header>
-<nav>
-        <ul>
-          <li>
-            <a href="index.html">Home Page</a>
+  <div class="alert alert-primary" role="alert">
+  Your premier place for all things footwear!
+</div>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome!</h1>
+  <p class="lead">We here at shoe reviewer give you shoes by the consumer for the consumer.</p>
+  <hr class="my-4">
+  <p>We make sure you are informed before making your purchase.</p>
+  <p class="lead">
+    
+  </p>
+</div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Shoe Reviews</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
 
-          <li>
-            <a href="about_section.html">About</a>
+          <li class="nav-item">
+            <a class="nav-link" href="about_section.html">About</a>
           </li>
-          <li>
-            <a href="revolution5.html">Nike Revolution 5</a>
-          </li>
-          <li>
-            <a href="flyknit.html">Nike Free RN Flyknit</a>
-          </li>
-          <li>
-            <a href="shoe_review_1.html">Addidas Continental 80</a>
-          </li>
-          <li>
-            <a href="shoe_review_2.html">Nike Air Max 97 Plus </a>
+
+      
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shoes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="flyknit.html">Flyknit</a>
+              <a class="dropdown-item" href="revolution5.html">Revolution 5</a>
+              <a class="dropdown-item" href="shoe_review_2.html">Nike Air Max 97 Plus</a>
+              <a class="dropdown-item" href="shoe_review_1.html">Adidas Continental 80</a>
+            </div>
           </li>
         </ul>
-      </nav>
-<section>
 
-<h3 style="text-align:center;">Do you want to know what an everyday person thinks about a shoe? </h3>
-<h3 style="text-align:center;">We got your answer! </h3>
+      </div>
+    </nav>
+       <div class="container">
 
 
-<article class="extrapadding">
+<h3>Do you want to know what an everyday person thinks about a shoe? </h3>
+<h3>We got your answer! </h3>
+
+
+<div class="row">
+ <div class="mycolor col-12 col-md-6"> 
 <p>We have your answers to any of these questions!</p>
     <ul>
       <li>Will this shoe withstand running long distance?</li>
@@ -78,8 +106,8 @@ border-left: 2px solid #ddd;
       <li>Is this shoe in style?</li>
       <li>Is this shoe worth the cost?</li>
     </ul>
-</article>
-<article>
+</div>
+<div class="mycolor col-12 col-md-6">
 <h2>The Reviews</h2>
 <!-- Table of shoes and their reviews -->
 <table>
@@ -89,6 +117,7 @@ border-left: 2px solid #ddd;
       <th>Nike Free RN Flyknit</th>
       <th>Addidas Continental 80</th>
       <th>Nike Air Max 97 Plus</th>
+
  </tr>
   </thead>
   <tbody>
@@ -116,18 +145,21 @@ border-left: 2px solid #ddd;
     </tr>
   </tfoot>
 </table>
-</article>
+</div>
+</div>
 
-
-<article id="summary">
+<div>
 <p>From workout shoes to casual shoes to work boots, check out what we think about a shoe BEFORE you buy it!</p>
 <p>Our reviews are based on comfort, style, and most importantly price.</p>
-</article>
+</div>
 <!-- Footer -->
 <footer>
 Copyright 2020 by Kade Tatkenhorst &amp; Daniel De Laria 
 </footer>
-</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
 </body>
 
 

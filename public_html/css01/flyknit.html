@@ -4,9 +4,30 @@
 
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css_test.css">
 <title>Nike Free RN Flyknit</title>
+<!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.min.css">
+
+   <style>
+      .mycolor {
+        background-color: #EEEEEE;
+        border-style: solid;
+        border-width: 1px;
+      }
+      .container {
+        background-color: #FFFFEE;
+        border-style: solid;
+        border-width: 15px;
+      }
+    </style>
 </head>
 
 <body>
@@ -18,30 +39,42 @@
       
       The Shoe Reviewer
     </header>
-    <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home Page</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Shoe Reviews</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
 
-          <li>
-            <a href="about_section.html">About</a>
+          <li class="nav-item">
+            <a class="nav-link" href="about_section.html">About</a>
           </li>
-          <li>
-            <a href="revolution5.html">Nike Revolution 5</a>
-          </li>
-          <li>
-            <a href="flyknit.html">Nike Free RN Flyknit</a>
-          </li>
-          <li>
-            <a href="shoe_review_1.html">Addidas Continental 80</a>
-          </li>
-          <li>
-            <a href="shoe_review_2.html">Nike Air Max 97 Plus </a>
+
+      
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shoes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="flyknit.html">Flyknit</a>
+              <a class="dropdown-item" href="revolution5.html">Revolution 5</a>
+              <a class="dropdown-item" href="shoe_review_2.html">Nike Air Max 97 Plus</a>
+              <a class="dropdown-item" href="shoe_review_1.html">Adidas Continental 80</a>
+            </div>
           </li>
         </ul>
-      </nav>
-<section>
+
+      </div>
+    </nav>
+       <div class="container">
+
 
 <!-- Shoe name -->
 <h2>Nike Free RN Flyknit</h2>
@@ -54,18 +87,21 @@
 
 
 <!--Review of shoe -->
-<article>
+<div>
 <h3><u>Review</u></h3>
 <p>If you're looking for a casual shoe to wear around the house, this shoe is for you! This shoe is very comfy and flexible. With just fabric above the sole this shoe is very breathable, perfect to wear around the house on a lazy Saturday or for a walk thorugh a park. The downside, with the only fabric style the shoe lacks any support. Would not recommend to go lift weights or to go on a run with the Free RN Flyknit. A must buy for a casual shoe however, its lack of versatility hurts the final score. Overall, a rating of 3.5/5 for the Free RN Flyknit.</p>
-</article>
-
+</div>
 
 
 <!-- Footer -->
 <footer>
 Copyright 2020 by Kade Tatkenhorst &amp; Daniel De Laria
 </footer>
-</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
 </body>
 
 
